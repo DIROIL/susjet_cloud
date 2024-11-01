@@ -1,0 +1,12 @@
+{
+    "esxi_host": "172.16.165.128",
+    "username": "root",
+    "password": "tototiti35*",
+    "ova_path": "/home/keumouo/tinyVM.ovf",
+    "vm_name": "tinyVM",    
+    "network": "VM Network" ,     
+    "memory_mb": 2096,
+    "instances": 1,
+    "vm_cp":2,
+    "datastore": "datastore1"
+}
