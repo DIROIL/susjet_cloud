@@ -1,1 +1,45 @@
+# Script de Déploiement du fichier ova sur serveur esxi
 
+Ce script Python permet de déployer une machine virtuelle sur un hôte ESXi à partir d'un fichier OVA. Il utilise les bibliothèques `pyVmomi` et `pyVim` pour interagir avec l'API vSphere.
+
+## Prérequis
+
+- Python 3.x
+- Bibliothèque `pyVmomi`
+- Accès à un hôte ESXi avec des droits suffisants pour créer des machines virtuelles
+
+## Installation
+
+0. Creer un environement virtuelle avec la commande: virtuel env
+
+1. Installez `pyVmomi` si ce n'est pas déjà fait :
+
+```bash
+
+   pip install pyvmomi
+
+3. Configuration de conf.json
+
+{
+    "esxi_host": "adresse_ip_ou_nom_hôte",
+    "username": "votre_nom_utilisateur",
+    "password": "votre_mot_de_passe",
+    "ova_path": "chemin/vers/votre_fichier.ovf",
+    "datastore": "nom_du_datastore",
+    "num_cpus": 2,
+    "memory_mb": 4096,
+    "instances": 1,
+    "vm_name": "nom_de_votre_vm"
+}
+
+4. execution du script "deploy_ova.py"
+
+## 
+    Il faut executer la commande 
+- python3 deploy_ova.py
+
+5. execution du script test.py"
+
+## 
+    Il faut executer la commande 
+- python3 test.py
